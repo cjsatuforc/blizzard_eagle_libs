@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.4.0">
+<eagle version="8.2.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
-<setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
@@ -157,7 +156,7 @@
 <wire x1="2.595" y1="1.6171" x2="2.595" y2="-1.8829" width="0.127" layer="21"/>
 <wire x1="2.595" y1="-1.8829" x2="-2.905" y2="-1.8829" width="0.127" layer="21"/>
 <circle x="-1.905" y="-0.8829" radius="0.5" width="0.127" layer="21"/>
-<text x="-3.905" y="-3.3829" size="1.27" layer="25" rot="R90">&gt;NAME</text>
+<text x="-3.905" y="-3.3829" size="1.27" layer="21" rot="R90">&gt;NAME</text>
 </package>
 <package name="QFN_24_PKG">
 <description>QFN-24</description>

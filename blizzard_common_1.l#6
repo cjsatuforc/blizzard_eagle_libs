@@ -230,6 +230,8 @@
 <circle x="0" y="-2.5" radius="5.59016875" width="0.127" layer="21"/>
 <text x="2.5" y="0" size="1.27" layer="21">+</text>
 <text x="2.5" y="-5" size="1.27" layer="21">-</text>
+<text x="-2.5" y="5" size="1.27" layer="21">&gt;NAME</text>
+<text x="-2.5" y="-10" size="1.27" layer="21">&gt;VALUE</text>
 </package>
 </packages>
 <symbols>
