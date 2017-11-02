@@ -778,10 +778,6 @@
 </gates>
 <devices>
 <device name="" package="1808_PKG">
-<connects>
-<connect gate="G$1" pin="P$1" pad="P$1"/>
-<connect gate="G$1" pin="P$2" pad="P$2"/>
-</connects>
 <technologies>
 <technology name=""/>
 </technologies>

@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="3.5" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mm"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -279,7 +279,6 @@
 <wire x1="-1.75" y1="-3.1" x2="8.75" y2="-3.1" width="0.127" layer="21"/>
 <wire x1="-1.75" y1="3.9" x2="8.75" y2="3.9" width="0.127" layer="21"/>
 <text x="-2.54" y="-2.667" size="1.27" layer="25" rot="R90">&gt;NAME</text>
-<text x="0" y="1.524" size="1.27" layer="21">SCREW</text>
 </package>
 <package name="2_PIN_SCREW_3.5MM_PKG">
 <pad name="P$1" x="0" y="0" drill="1.2"/>
@@ -289,8 +288,6 @@
 <wire x1="-1.75" y1="3.9" x2="5.25" y2="3.9" width="0.127" layer="21"/>
 <wire x1="-1.75" y1="-3.1" x2="-1.75" y2="3.5" width="0.127" layer="21"/>
 <wire x1="5.25" y1="-3.1" x2="5.25" y2="3.5" width="0.127" layer="21"/>
-<text x="-3.048" y="-2.921" size="1.27" layer="25" rot="R90">&gt;NAME</text>
-<text x="-1.524" y="1.651" size="1.27" layer="21">SCREW</text>
 </package>
 </packages>
 <symbols>
@@ -417,10 +414,10 @@
 <text x="-7.62" y="10.16" size="1.27" layer="94">&gt;NAME</text>
 </symbol>
 <symbol name="4_PIN_FEMALE_2.54MM_SYM">
-<pin name="1" x="-5.08" y="2.54" visible="off" length="middle"/>
-<pin name="2" x="-5.08" y="0" visible="off" length="middle"/>
-<pin name="3" x="-5.08" y="-2.54" visible="off" length="middle"/>
-<pin name="4" x="-5.08" y="-5.08" visible="off" length="middle"/>
+<pin name="1" x="-5.08" y="2.54" visible="pin" length="middle"/>
+<pin name="2" x="-5.08" y="0" visible="pin" length="middle"/>
+<pin name="3" x="-5.08" y="-2.54" visible="pin" length="middle"/>
+<pin name="4" x="-5.08" y="-5.08" visible="pin" length="middle"/>
 <wire x1="0" y1="-7.62" x2="0" y2="5.08" width="0.254" layer="94"/>
 <wire x1="0" y1="5.08" x2="5.08" y2="5.08" width="0.254" layer="94"/>
 <wire x1="5.08" y1="5.08" x2="5.08" y2="-7.62" width="0.254" layer="94"/>
@@ -428,9 +425,9 @@
 <text x="0" y="7.62" size="1.27" layer="94">&gt;NAME</text>
 </symbol>
 <symbol name="3_PIN_SCREW_3.5MM_SYM">
-<pin name="1" x="-5.08" y="2.54" visible="off" length="middle"/>
-<pin name="2" x="-5.08" y="0" visible="off" length="middle"/>
-<pin name="3" x="-5.08" y="-2.54" visible="off" length="middle"/>
+<pin name="1" x="-5.08" y="2.54" visible="pin" length="middle"/>
+<pin name="2" x="-5.08" y="0" visible="pin" length="middle"/>
+<pin name="3" x="-5.08" y="-2.54" visible="pin" length="middle"/>
 <wire x1="0" y1="-5.08" x2="0" y2="5.08" width="0.254" layer="94"/>
 <wire x1="0" y1="5.08" x2="5.08" y2="5.08" width="0.254" layer="94"/>
 <wire x1="5.08" y1="5.08" x2="5.08" y2="-5.08" width="0.254" layer="94"/>
@@ -438,8 +435,8 @@
 <text x="0" y="7.62" size="1.27" layer="94">&gt;NAME</text>
 </symbol>
 <symbol name="2_PIN_SCREW_3.5MM_SYM">
-<pin name="1" x="-5.08" y="2.54" visible="off" length="middle"/>
-<pin name="2" x="-5.08" y="0" visible="off" length="middle"/>
+<pin name="1" x="-5.08" y="2.54" visible="pin" length="middle"/>
+<pin name="2" x="-5.08" y="0" visible="pin" length="middle"/>
 <wire x1="0" y1="-2.54" x2="0" y2="5.08" width="0.254" layer="94"/>
 <wire x1="0" y1="5.08" x2="5.08" y2="5.08" width="0.254" layer="94"/>
 <wire x1="5.08" y1="5.08" x2="5.08" y2="-2.54" width="0.254" layer="94"/>
@@ -508,7 +505,7 @@ C) of Power Dissipation.
 </device>
 </devices>
 </deviceset>
-<deviceset name="ESP32_WROOM_BREAKOUT_DEV" prefix="U">
+<deviceset name="ESP32_WROOM_BREAKOUT_DEV">
 <description>ESP32 WROOM Breakout</description>
 <gates>
 <gate name="G$1" symbol="ESP32_WROOM_SYM" x="-10.16" y="10.16"/>
@@ -561,7 +558,7 @@ C) of Power Dissipation.
 </device>
 </devices>
 </deviceset>
-<deviceset name="8_CHANNEL_LEVEL_SHIFTER" prefix="U">
+<deviceset name="8_CHANNEL_LEVEL_SHIFTER">
 <gates>
 <gate name="G$1" symbol="8_CHANNEL_LEVEL_SHIFTER_SYM" x="-2.54" y="7.62"/>
 </gates>
@@ -599,7 +596,7 @@ C) of Power Dissipation.
 </device>
 </devices>
 </deviceset>
-<deviceset name="5V_SWITCHING_POWER_DEV" prefix="U">
+<deviceset name="5V_SWITCHING_POWER_DEV">
 <gates>
 <gate name="G$1" symbol="5V_SWITCHING_POWER_SYM" x="7.62" y="-7.62"/>
 </gates>
@@ -619,7 +616,7 @@ C) of Power Dissipation.
 </device>
 </devices>
 </deviceset>
-<deviceset name="4_PIN_2.54MM_PKG" prefix="J">
+<deviceset name="4_PIN_2.54MM_PKG">
 <gates>
 <gate name="G$1" symbol="4_PIN_FEMALE_2.54MM_SYM" x="0" y="-5.08"/>
 </gates>
@@ -637,7 +634,7 @@ C) of Power Dissipation.
 </device>
 </devices>
 </deviceset>
-<deviceset name="3_PIN_SCREW_3.5MM_DEV" prefix="J">
+<deviceset name="3_PIN_SCREW_3.5MM_DEV">
 <gates>
 <gate name="G$1" symbol="3_PIN_SCREW_3.5MM_SYM" x="0" y="-5.08"/>
 </gates>
@@ -647,22 +644,6 @@ C) of Power Dissipation.
 <connect gate="G$1" pin="1" pad="P$1"/>
 <connect gate="G$1" pin="2" pad="P$2"/>
 <connect gate="G$1" pin="3" pad="P$3"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="2_PIN_SCREW_3.5MM_DEV" prefix="J">
-<gates>
-<gate name="G$1" symbol="2_PIN_SCREW_3.5MM_SYM" x="0" y="-5.08"/>
-</gates>
-<devices>
-<device name="" package="2_PIN_SCREW_3.5MM_PKG">
-<connects>
-<connect gate="G$1" pin="1" pad="P$1"/>
-<connect gate="G$1" pin="2" pad="P$2"/>
 </connects>
 <technologies>
 <technology name=""/>
